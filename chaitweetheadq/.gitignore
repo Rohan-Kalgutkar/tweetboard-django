@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# SQLite database
+*.sqlite3
+
+# Django secret settings
+.env
+
+# Virtual environment
+.venv/
+env/
+
+# Media uploads
+/media/
+
+# Staticfiles collected
+/static/
+
+# VS Code settings
+.vscode/

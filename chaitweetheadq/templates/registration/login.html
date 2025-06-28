@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Login Form</h2>
+
+
+<script>console.log("Rendering login form...")</script>
+
+<form method="post">
+    {% csrf_token %}
+    
+    
+    <script>console.log("CSRF token included")</script>
+
+    {{ form.as_p }}
+
+   
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+
+<script>console.log("Login page loaded")</script>
+
+<p>Don't have an account? <a href="{% url 'register' %}">Register Here</a></p>
+{% endblock %}
